@@ -1,6 +1,4 @@
-#include <iostream>
-#include <queue>
-#include<algorithm>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -25,24 +23,15 @@ int main(){
     //print
     print(q);
 
+    //pop
+    q.pop();
+    print(q);
+
     //front
     cout << q.front() << endl;
 
     //back
     cout << q.back() << endl;
-
-    //pop
-    q.pop();
-
-    print(q);
-
-    //empty
-    cout << q.empty() << endl;
-
-    //size
-    cout << q.size() << endl;
-
-    cout << binary_search(q.front(),q.back(),20);
 
     
 }

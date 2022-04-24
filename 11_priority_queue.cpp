@@ -1,38 +1,41 @@
-#include <iostream>
-#include <queue>
+#include<bits/stdc++.h>
 
 using namespace std;
+
+void print(priority_queue<int> pq){
+    while(pq.empty()==false){
+        cout << pq.top() << " ";
+        pq.pop();
+    }
+    cout << endl;
+}
 
 int main(){
 
     //max heap
-    priority_queue<int> p;
+    priority_queue<int> pq;
 
     //min heap
     priority_queue<int,vector<int>,greater<int> > p2;
 
     //push
-    p.push(2);
-    p.push(3);
-    p.push(5);
-    p.push(0);
-    
-    //print mistake
-    // for( int i=0; i<p.size(); i++){
-    //     cout << p.top();
-    //     p.pop();
-    // }
+    pq.push(2);
+    pq.push(3);
+    pq.push(5);
+    pq.push(0);
 
-    //correct way
-    int n=p.size();
-    for(int i=0;i<n;i++){
-        cout << p.top();
-        p.pop();
-    }
+    //print
+    print(pq);
 
+    //top
+    cout << pq.top() << endl;
 
-    cout << p.empty();
+    //pop
+    pq.pop();
+    print(pq);
 
+    //empty
+    cout << pq.empty() << endl;
 
 
 }

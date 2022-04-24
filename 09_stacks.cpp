@@ -1,46 +1,32 @@
-#include <iostream>
-#include <stack>
-
+#include<bits/stdc++.h>
 using namespace std;
 
-void print(stack<int> s){
-   while(s.empty()==false){
-       cout << s.top() << " ";
-       s.pop();
+void print(stack<int> stack1){
+   while(stack1.empty()==false){
+       cout << stack1.top() << " ";
+       stack1.pop();
    }
    cout << endl;
 }
 
 int main(){
     //declaration
-    stack<int> s;
+    stack<int> stack1;
 
-    //insertion
-    s.push(10);
-    s.push(20);
-    s.push(30);
-    s.push(40);
-    s.push(50);
-    
-
-    //size
-    cout << s.size() << '\n';
+    //push
+    stack1.push(10);
+    stack1.push(20);
+    stack1.push(30);
+    stack1.push(40);
 
     //accessing topmost element
-    cout << s.top() << '\n';
+    cout << stack1.top() << '\n';
 
     //print
-    print(s);
+    print(stack1);
 
-    //popping out elements
-    s.pop();
-    s.pop();
-    s.pop();
-    s.pop();
-    s.pop();
-
-    //empty
-    cout << s.empty() << endl;
-    
+    //popping
+    stack1.pop();
+    print(stack1);
     
 }
