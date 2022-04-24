@@ -3,8 +3,8 @@
 using namespace std;
 
 void print(vector<int> v){
-    for (auto i=v.begin();i<v.end();i++){
-        cout<<(*i)<<" ";
+    for (auto i: v){
+        cout<< i <<" ";
     }
     cout<<endl;
 }
