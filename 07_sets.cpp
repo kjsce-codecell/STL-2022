@@ -15,6 +15,7 @@ int main(){
 
     // no duplicates, no modification
     // declaration
+    set<int>set1 = {1,2,3,4,5};
     set<int> s;
 
     // insertion
@@ -25,19 +26,14 @@ int main(){
     s.insert(1);
     s.insert(4);
 
-
-    cout << s.count(5) << endl;
-
     //print
     print(s);
 
-
-    cout << s.count(5) << endl;
-
     //size
     cout << s.size() << endl;
-    
-    // returns address
-    cout << *s.find(5) << endl;
+
+    //clear
+    s.clear();
+    print(s);
 
 }
