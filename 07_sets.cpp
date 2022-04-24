@@ -36,4 +36,9 @@ int main(){
     s.clear();
     print(s);
 
+    //erase
+    s.erase(4);
+    s.erase(s.begin(),s.end());
+    print(s);
+
 }
