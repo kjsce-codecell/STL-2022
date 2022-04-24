@@ -3,29 +3,28 @@
 
 using namespace std;
 
+void print(map<int, int> m){
+    for(auto i: m){
+        cout<< i.first << "->" << i.second << "\n";
+    }
+}
+
 int main(){
     //sorted, no duplicates
-    map<int,string> m;
+    map<int,int> m;
 
-    m[1]="pranay";
-    m[2]="gaurish";
-    m[3]="kashvi";
-    m.insert({4,"pargat"});
+    m[1]=10;
+    m[2]=20;
+    m[3]=30;
+    m.insert({4,40});
 
-    for(auto i: m){
-        cout<< i.first << "->" << i.second << "\n";
-    }
+    print(m);
 
-    m.insert({4,"arya"});
+    m.insert({4,40});
 
-    for(auto i: m){
-        cout<< i.first << "->" << i.second << "\n";
-    }
+    print(m);
 
-    m.count(3);
-    m.erase(3);
-
-    // returns iterator
-    m.find(2);
+    cout << m.count(3) << endl;
+    
 
 }
