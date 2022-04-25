@@ -25,9 +25,13 @@ int main(){
     sort(v.begin(),v.end());
     print(v);
 
-    //max/min
+    //compare min max
     cout << max(v[1],v[3]) <<endl;
     cout << min(v[1],v[3]) <<endl;
+
+    //min element max element
+    cout << *min_element(v.begin(),v.end());
+    cout << *max_element(v.begin(),v.end());
 
     //swap
     swap(v[1],v[5]);
