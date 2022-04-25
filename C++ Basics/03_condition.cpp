@@ -11,7 +11,7 @@ int main()
     }
     else if (n < 0)
     {
-        cout << "n is negetive\n";
+        cout << "n is negative\n";
     }
     else{
         cout << "n is greater than hundred\n";
